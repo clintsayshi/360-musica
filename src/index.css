@@ -1,3 +1,76 @@
 @tailwind base;
+@layer base {
+  html {
+    @apply text-light;
+    @apply bg-dark;
+  }
+}
 @tailwind components;
 @tailwind utilities;
+
+.container {
+  width: 95%;
+  margin: auto;
+}
+
+@media (min-width: 640px) {
+  .container {
+    width: 85%;
+  }
+}
+
+.aside-navigation,
+.aside-navigation-hidden {
+  position: fixed;
+
+  /* --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse)); */
+
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 33 35 / var(--tw-bg-opacity));
+
+  padding-top: 3.5rem /* 56px */;
+  padding-bottom: 3.5rem /* 56px */;
+  padding-left: 1.5rem /* 24px */;
+  padding-right: 1.5rem /* 24px */;
+
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 50;
+}
+
+.aside-navigation {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateX(0);
+  transition: all 1s;
+}
+
+.aside-navigation-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(50%);
+  transition: all 1s;
+}
+
+@media (min-width: 640px) {
+  .aside-navigation,
+  .aside-navigation-hidden {
+    padding-top: 1.5rem /* 24px */;
+    padding-bottom: 1.5rem /* 24px */;
+    padding-left: 0px;
+    padding-right: 0px;
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    opacity: 1;
+    pointer-events: all;
+    transform: translateX(0);
+    transition: all 1s;
+  }
+}

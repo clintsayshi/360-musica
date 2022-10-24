@@ -1,0 +1,92 @@
+.xs-navigation {
+  padding-block: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 640px) {
+  .xs-navigation {
+    display: none;
+  }
+}
+
+.sm-navigation {
+  padding: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .sm-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 1px dotted blue;
+  }
+}
+
+.xs-logo-and-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.xs-search-and-button {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0%;
+          flex: 1 1 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.search-input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0%;
+          flex: 1 1 0%;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.searchbutton {
+  background-color: blue;
+  display: block;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  padding: 0.25rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  position: relative;
+}
+
+.searchbutton-hidden {
+  pointer-events: none;
+  background-color: blue;
+  display: none;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+/*# sourceMappingURL=style.css.map */
